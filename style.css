@@ -1,0 +1,54 @@
+body{
+    background-image: linear-gradient(to top right, forestgreen, white);
+    margin: 150px; 
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+header > h3{
+    text-align: center;
+    text-decoration: underline;
+}
+form{
+    background-color: white;
+    border: 2px groove black;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    padding: 20px;
+    margin: 20px;
+    gap: 10px;
+    flex-direction: column;
+}
+/* .section{
+    margin: 20px;
+    gap: 20px;
+} */
+.one{
+    margin-bottom: 20px;
+}
+.btn{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+}
+button{
+    width: 80px;
+    height: 25px;
+    background-color: cornsilk;
+    border-style: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.email{
+    border-style: none;
+    border-bottom:1px solid black;
+}
+.password{
+    border-style: none;
+    border-bottom:1px solid black;
+}
+
