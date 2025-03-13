@@ -1,10 +1,12 @@
+//declaring my html elements
+
 const inputEmail = document.getElementById("email");
 const inputPassword = document.getElementById("password");
 const error = document.getElementById("errorMssg");
 const form = document.getElementById("form");
 
 
-
+//to get each users email and password
 const usersCredentials = [
     {email: "lateefat@gmail.com", password: "ajayi0123"}, 
     {email: "abdullah@gmail.com", password: "adeosun012"}, 
@@ -25,6 +27,7 @@ const login = (email, password) => {
         return "Password must not be less than 6 letters";
     }
     const user = usersCredentials.find(user => user.email === email && user.password === password);
+     //to save each users email and password
 
     if (user) {
         return `Hi ${email} you are now logged in`
@@ -36,19 +39,20 @@ const login = (email, password) => {
 
 
 form.addEventListener("submit", function (event) {
-    event.preventDefault();
+    event.preventDefault(); //to prevent reload
 
-    const email = inputEmail.value;
+    const email = inputEmail.value; //to get each email value
 
-    const password = inputPassword.value;
+    const password = inputPassword.value; //to get each password value
 
     const result = login(email, password);
 
-    if (result.includes("logged in")) {
+    if (result.includes("logged in")) {  
+        //if it's logged in an alert should pop up and there schould be no error mssg
         alert(result);
         error.textContent = "";
     } else {
-        error.textContent = result;
+        error.textContent = result; //vice versa
     }
 
 });
